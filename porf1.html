@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - IRIS</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f9fa;}
+    header {background:#0b1e3c; color:#fff; padding:10px 15px; display:flex; justify-content:space-between; align-items:center;}
+    header h1 {font-size:14px; margin:0;}
+    nav a {color:#fff; margin-left:10px; text-decoration:none; font-size:12px;}
+    .breadcrumb {background:#fff; padding:8px 12px; font-size:12px; color:#555;}
+    main {padding:10px; display:flex; gap:15px;}
+    /* Left column for photo */
+    .left-column {
+      width:200px;
+      background:#fff;
+      border-radius:4px;
+      padding:10px;
+      text-align:center;
+      height:fit-content;
+    }
+    .left-column img {width:150px; border-radius:4px;}
+    .left-column h4 {margin:8px 0 4px 0; font-size:14px;}
+    .left-column p {font-size:12px; color:#666; margin:4px 0;}
+    .left-column button {margin-top:6px;}
+    /* Right column for details */
+    .right-column {
+      flex:1;
+      background:#fff;
+      border-radius:4px;
+      padding:10px;
+    }
+    .right-column h3 {
+      margin-top:0;
+      font-size:14px;
+      padding:6px 0;
+      color:#333;
+      font-weight:bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .right-column table {width:100%; border-collapse:collapse; margin-top:8px;}
+    .right-column th, .right-column td {text-align:left; padding:6px; font-size:12px; border-bottom:1px solid #eee; vertical-align:top;}
+    td.update-detail {background-color:#ffe6e6; color:#333; font-style:italic; padding:6px; border-radius:2px;}
+    footer {text-align:center; padding:8px; font-size:10px; color:#666; margin-top:15px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NITK Surathkal | IRIS</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">TOS</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    Home / Student / <span>KONE VENKATESH</span>
+  </div>
+
+  <main>
+    <!-- Left column with photo -->
+    <div class="left-column">
+      <img src="https://iris.nitk.ac.in/hrms/students/get_profile_pic/14895?1601314188" alt="Profile Photo">
+      <h4>KONE VENKATESH</h4>
+      <p>🎓 PhD Student @ NITK, Surathkal</p>
+      <button>Edit Profile</button>
+    </div>
+
+    <!-- Right column with details -->
+    <div class="right-column">
+      <h3>Personal Details</h3>
+      <table>
+        <tr><th>Father's Name</th><td>KONE YEDUKONDALA VENKATESWARA RAO</td></tr>
+        <tr><th>Gender</th><td>Male</td></tr>
+        <tr><th>Date of Birth</th><td>09-07-1992</td></tr>
+        <tr><th>Blood Group</th><td>O+</td></tr>
+        <tr><th>Email</th><td>konevenkatesh92@gmail.com</td></tr>
+        <tr><th>Mother Tongue</th><td>Telugu</td></tr>
+        <tr><th>Nationality</th><td>India</td></tr>
+        <tr><th>Aadhaar Number</th><td>426875026729</td></tr>
+        <tr><th>Phone</th><td>7893646449</td></tr>
+        <tr><th>Parents Phone</th><td>7032674747</td></tr>
+        <tr><th>Name in Hindi</th><td class="update-detail">Update this detail</td></tr>
+        <tr><th>Permanent Address</th><td>3-245/2 VENKATREDDY NAGAR, AIE BOLLARAM, Telangana</td></tr>
+        <tr><th>Pincode</th><td>502325</td></tr>
+        <tr><th>Country</th><td>India</td></tr>
+      </table>
+      <h3>Academic Details</h3>
+      <table>
+        <tr><th>Roll Number</th><td>207CV005</td></tr>
+        <tr><th>Registration Number</th><td>207101</td></tr>
+        <tr><th>Branch</th><td>PhD : Civil Engineering</td></tr>
+        <tr><th>Degree</th><td>PhD</td></tr>
+        <tr><th>Category</th><td>General</td></tr>
+        <tr><th>Date of Admission</th><td>28-09-2020</td></tr>
+      </table>
+      <h3>Hostel Details</h3>
+      <table>
+        <tr><th>Hostel Room</th><td>Bhramargi (New PG Tower A) - Room Number A-501</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    IRIS @ NITK Surathkal 2025
+  </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile | IRIS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #001f4d;
+      color: #fff;
+      padding: 8px 15px;
+    }
+    .site-name {
+      font-size: 14px;
+    }
+    .menu-icon {
+      margin-right: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .profile-icon {
+      font-size: 20px;
+    }
+    .page-title {
+      text-align: center;
+      padding: 15px;
+      background: #f0f0f0;
+    }
+    .page-title h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .profile-container {
+      display: flex;
+      padding: 20px;
+    }
+    .left-card {
+      width: 220px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      margin-right: 20px;
+    }
+    .profile-photo {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .left-card h3 {
+      margin: 10px 0 5px 0;
+    }
+    .edit-btn {
+      background: #007bff;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .right-details {
+      flex: 1;
+    }
+    .tab-bar {
+      margin: 10px 0;
+    }
+    .tab {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #eee;
+      margin-right: 5px;
+      border-radius: 4px 4px 0 0;
+      font-size: 14px;
+    }
+    .tab.active {
+      background: #fff;
+      border-bottom: 2px solid #001f4d;
+      font-weight: bold;
+    }
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: #001f4d;
+    }
+    .details-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .details-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    .details-table td:first-child {
+      font-weight: bold;
+      width: 200px;
+      background: #f9f9f9;
+    }
+    .update-btn {
+      background: #ff5c5c;
+      border: none;
+      padding: 6px 10px;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="left">
+      <a href="#" class="menu-icon">☰</a>
+      <span class="site-name">iris.nitk.ac.in/hrms/stu</span>
+    </div>
+    <div class="right">
+      <div class="profile-icon">👤</div>
+    </div>
+  </header>
+  <div class="page-title">
+    <h2>DINESH KUMAR RAVADA | IRIS</h2>
+  </div>
+  <main>
+    <div class="profile-container">
+      <div class="left-card">
+        <img src="https://iris.nitk.ac.in/hrms/students/get_profile_pic/14895?1601314188" alt="Profile Photo" class="profile-photo">
+        <h3>DINESH KUMAR<br>RAVADA</h3>
+        <p>PhD Student @ NITK, Surathkal</p>
+        <button class="edit-btn">Edit Profile</button>
+      </div>
+      <div class="right-details">
+        <h3>User Profile</h3>
+        <div class="tab-bar">
+          <span class="tab active">Profile</span>
+          <span class="tab">Additional Details</span>
+        </div>
+        <h4>Personal Details</h4>
+        <table class="details-table">
+          <tr><td>Father's Name</td><td>RAVADA TIRUPATHI RAO</td></tr>
+          <tr><td>Gender</td><td>Male</td></tr>
+          <tr><td>Date of Birth</td><td>20-09-1994</td></tr>
+          <tr><td>Blood Group Type</td><td>A+</td></tr>
+          <tr><td>Email address</td><td>dineshkumar.ravada143@gmail.com</td></tr>
+          <tr><td>Mother Tongue</td><td>TELUGU</td></tr>
+          <tr><td>Nationality</td><td>India</td></tr>
+          <tr><td>Aadhaar Number</td><td>491077898669</td></tr>
+          <tr><td>Phone</td><td>+91 9398206630</td></tr>
+          <tr><td>Parents Phone Number</td><td>9398206630</td></tr>
+          <tr><td>Name in Hindi</td><td><button class="update-btn">Update this detail</button></td></tr>
+          <tr><td>Permanent Address</td><td>1-08-26 BALAGA BUCHIPETA Srikakulam, Andhra Pradesh</td></tr>
+          <tr><td>Pincode</td><td>532001</td></tr>
+          <tr><td>Country</td><td>India</td></tr>
+        </table>
+        <h4>Academic Details</h4>
+        <table class="details-table">
+          <tr><td>Roll Number</td><td>217ME008</td></tr>
+          <tr><td>Registration Number</td><td>2170095</td></tr>
+          <tr><td>Branch</td><td>PhD: Mechanical Engineering</td></tr>
+          <tr><td>Degree</td><td>PhD</td></tr>
+          <tr><td>Category</td><td>Other Backward Class</td></tr>
+          <tr><td>Date of Admission</td><td>23-08-2021</td></tr>
+        </table>
+        <h4>Hostel Details</h4>
+        <table class="details-table">
+          <tr><td>Hostel Room</td><td>Bhramargi (New PG Tower A) - Room Number A-501</td></tr>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

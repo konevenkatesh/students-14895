@@ -1,178 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Profile | IRIS</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-    }
-    .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #001f4d;
-      color: #fff;
-      padding: 8px 15px;
-    }
-    .site-name {
-      font-size: 14px;
-    }
-    .menu-icon {
-      margin-right: 10px;
-      color: #fff;
-      text-decoration: none;
-    }
-    .profile-icon {
-      font-size: 20px;
-    }
-    .page-title {
-      text-align: center;
-      padding: 15px;
-      background: #f0f0f0;
-    }
-    .page-title h2 {
-      margin: 0;
-      font-size: 18px;
-    }
-    .profile-container {
-      display: flex;
-      padding: 20px;
-    }
-    .left-card {
-      width: 220px;
-      text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 15px;
-      margin-right: 20px;
-    }
-    .profile-photo {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .left-card h3 {
-      margin: 10px 0 5px 0;
-    }
-    .edit-btn {
-      background: #007bff;
-      color: #fff;
-      padding: 8px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .right-details {
-      flex: 1;
-    }
-    .tab-bar {
-      margin: 10px 0;
-    }
-    .tab {
-      display: inline-block;
-      padding: 8px 12px;
-      background: #eee;
-      margin-right: 5px;
-      border-radius: 4px 4px 0 0;
-      font-size: 14px;
-    }
-    .tab.active {
-      background: #fff;
-      border-bottom: 2px solid #001f4d;
-      font-weight: bold;
-    }
-    h4 {
-      margin-top: 20px;
-      margin-bottom: 8px;
-      color: #001f4d;
-    }
-    .details-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    .details-table td {
-      border: 1px solid #ddd;
-      padding: 8px;
-    }
-    .details-table td:first-child {
-      font-weight: bold;
-      width: 200px;
-      background: #f9f9f9;
-    }
-    .update-btn {
-      background: #ff5c5c;
-      border: none;
-      padding: 6px 10px;
-      color: #fff;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - IRIS</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Using Inter font as a base */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        /* Custom styles for specific elements */
+        .tab-button.active {
+            border-bottom-color: #3b82f6;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+    </style>
 </head>
-<body>
-  <header class="top-bar">
-    <div class="left">
-      <a href="#" class="menu-icon">☰</a>
-      <span class="site-name">iris.nitk.ac.in/hrms/stu</span>
-    </div>
-    <div class="right">
-      <div class="profile-icon">👤</div>
-    </div>
-  </header>
-  <div class="page-title">
-    <h2>DINESH KUMAR RAVADA | IRIS</h2>
-  </div>
-  <main>
-    <div class="profile-container">
-      <div class="left-card">
-        <img src="https://iris.nitk.ac.in/hrms/students/get_profile_pic/14895?1601314188" alt="Profile Photo" class="profile-photo">
-        <h3>DINESH KUMAR<br>RAVADA</h3>
-        <p>PhD Student @ NITK, Surathkal</p>
-        <button class="edit-btn">Edit Profile</button>
-      </div>
-      <div class="right-details">
-        <h3>User Profile</h3>
-        <div class="tab-bar">
-          <span class="tab active">Profile</span>
-          <span class="tab">Additional Details</span>
+<body class="bg-gray-50">
+
+    <!-- Header Section (Kept as requested) -->
+    <header class="bg-[#0b1e3c] text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">NITK Surathkal | IRIS</h1>
+            <nav class="flex items-center space-x-6">
+                <a href="#" class="text-sm hover:text-blue-300 transition-colors">About</a>
+                <a href="#" class="text-sm hover:text-blue-300 transition-colors">TOS</a>
+            </nav>
         </div>
-        <h4>Personal Details</h4>
-        <table class="details-table">
-          <tr><td>Father's Name</td><td>RAVADA TIRUPATHI RAO</td></tr>
-          <tr><td>Gender</td><td>Male</td></tr>
-          <tr><td>Date of Birth</td><td>20-09-1994</td></tr>
-          <tr><td>Blood Group Type</td><td>A+</td></tr>
-          <tr><td>Email address</td><td>dineshkumar.ravada143@gmail.com</td></tr>
-          <tr><td>Mother Tongue</td><td>TELUGU</td></tr>
-          <tr><td>Nationality</td><td>India</td></tr>
-          <tr><td>Aadhaar Number</td><td>491077898669</td></tr>
-          <tr><td>Phone</td><td>+91 9398206630</td></tr>
-          <tr><td>Parents Phone Number</td><td>9398206630</td></tr>
-          <tr><td>Name in Hindi</td><td><button class="update-btn">Update this detail</button></td></tr>
-          <tr><td>Permanent Address</td><td>1-08-26 BALAGA BUCHIPETA Srikakulam, Andhra Pradesh</td></tr>
-          <tr><td>Pincode</td><td>532001</td></tr>
-          <tr><td>Country</td><td>India</td></tr>
-        </table>
-        <h4>Academic Details</h4>
-        <table class="details-table">
-          <tr><td>Roll Number</td><td>217ME008</td></tr>
-          <tr><td>Registration Number</td><td>2170095</td></tr>
-          <tr><td>Branch</td><td>PhD: Mechanical Engineering</td></tr>
-          <tr><td>Degree</td><td>PhD</td></tr>
-          <tr><td>Category</td><td>Other Backward Class</td></tr>
-          <tr><td>Date of Admission</td><td>23-08-2021</td></tr>
-        </table>
-        <h4>Hostel Details</h4>
-        <table class="details-table">
-          <tr><td>Hostel Room</td><td>Bhramargi (New PG Tower A) - Room Number A-501</td></tr>
-        </table>
-      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container mx-auto p-4 md:p-6">
+
+        <!-- Title Bar -->
+        <div class="bg-white p-4 rounded-lg shadow-sm mb-4">
+            <!-- IRIS Logo -->
+            <div class="text-center mb-4">
+                 <img src="https://play-lh.googleusercontent.com/qHo63kKSfVO1alcQzwgZFgGoOYIXR2ydcCwomCNpKkr8CCsyrw8yfjbENSKdl5Efng=w240-h480-rw" alt="IRIS Logo" class="h-16 mx-auto">
+            </div>
+
+            <!-- Student Name & Buttons -->
+            <div class="text-center">
+                <h2 class="text-lg font-semibold text-gray-800 mb-3">KONE VENKATESH | IRIS</h2>
+                <div class="flex space-x-2 justify-center">
+                    <button class="bg-slate-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md hover:bg-slate-800 transition-colors">Tell IRIS</button>
+                    <button class="bg-gray-200 text-gray-700 text-xs font-semibold px-3 py-1.5 rounded-md hover:bg-gray-300 transition-colors">★ Frequently Visited</button>
+                </div>
+            </div>
+
+            <!-- Module Menu Link -->
+            <div class="text-sm text-blue-600 mt-4 border-t pt-3">
+                <a href="#" class="hover:underline">☰ Show Module Menu</a>
+            </div>
+        </div>
+
+        <!-- Informational Banner -->
+        <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm mb-6" role="alert">
+            <p class="text-sm">Students can generate their ID Cards only in the first semester as per institute policy. Contact <strong>MIS Office</strong> to get your ID Card generated if you're in a higher semester.</p>
+        </div>
+
+        <!-- Profile Layout -->
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- Left Column: Profile Picture and Basic Info -->
+            <div class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img class="w-36 h-36 rounded-lg mx-auto shadow-md border-4 border-white object-cover" src="https://raw.githubusercontent.com/konevenkatesh/students-14895/refs/heads/main/image.jpg" alt="Profile Photo of KONE VENKATESH" onerror="this.onerror=null;this.src='https://placehold.co/150x150/EBF8FF/3182CE?text=KV';">
+                    <h4 class="mt-4 text-xl font-bold text-gray-800">KONE VENKATESH</h4>
+                    <p class="text-sm text-gray-500 mt-1">🎓 PhD Student @ NITK, Surathkal</p>
+                    <button class="mt-4 w-full bg-green-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 transition-colors shadow">
+                        Edit Profile
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Detailed Information with Tabs -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-sm">
+                    <!-- Tab Navigation -->
+                    <div class="border-b border-gray-200">
+                        <nav class="flex px-4" aria-label="Tabs">
+                            <button onclick="changeTab(event, 'profile')" class="tab-button active text-sm text-gray-500 py-3 px-4 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">
+                                Profile
+                            </button>
+                            <button onclick="changeTab(event, 'additional')" class="tab-button text-sm text-gray-500 py-3 px-4 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">
+                                Additional Details
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="profile" class="tab-content p-6">
+                        <!-- Personal Details -->
+                        <section>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Personal Details</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Father's Name</span> <span class="text-gray-800 text-right">KONE YEDUKONDALA VENKATESWARA RAO</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Gender</span> <span class="text-gray-800">Male</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Date of Birth</span> <span class="text-gray-800">09-07-1992</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Blood Group</span> <span class="text-gray-800">O+</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Email</span> <span class="text-gray-800">konevenkatesh92@gmail.com</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Mother Tongue</span> <span class="text-gray-800">Telugu</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Nationality</span> <span class="text-gray-800">India</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Aadhaar Number</span> <span class="text-gray-800">426875026729</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Phone</span> <span class="text-gray-800">7893646449</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Parents Phone</span> <span class="text-gray-800">7032674747</span></div>
+                                <div class="flex justify-between border-b pb-2 items-center"><span class="font-medium text-gray-600">Name in Hindi</span> <span class="bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-md">Update this detail</span></div>
+                                <div class="flex justify-between border-b pb-2 md:col-span-2"><span class="font-medium text-gray-600">Permanent Address</span> <span class="text-gray-800 text-right">3-245/2 VENKATREDDY NAGAR, AIE BOLLARAM, Telangana, 502325, India</span></div>
+                            </div>
+                        </section>
+
+                        <!-- Academic Details -->
+                        <section class="mt-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Academic Details</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Roll Number</span> <span class="text-gray-800">207CV005</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Registration Number</span> <span class="text-gray-800">207101</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Branch</span> <span class="text-gray-800">PhD : Civil Engineering</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Degree</span> <span class="text-gray-800">PhD</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Category</span> <span class="text-gray-800">General</span></div>
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Date of Admission</span> <span class="text-gray-800">28-09-2020</span></div>
+                            </div>
+                        </section>
+
+                        <!-- Hostel Details -->
+                        <section class="mt-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Hostel Details</h3>
+                            <div class="grid grid-cols-1 text-sm">
+                                <div class="flex justify-between border-b pb-2"><span class="font-medium text-gray-600">Hostel Room</span> <span class="text-gray-800">Bhramargi (New PG Tower A) - Room Number A-501</span></div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div id="additional" class="tab-content hidden p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Additional Details</h3>
+                        <p class="text-sm text-gray-600">This section would contain additional information, such as course registrations, grades, or fee details. This is placeholder content.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-6">
+        <p class="text-xs text-gray-500">Server: <span class="font-semibold bg-gray-200 text-gray-700 px-2 py-1 rounded-md">sp01</span></p>
+    </footer>
+
+    <script>
+        // JavaScript for Tab functionality
+        function changeTab(event, tabID) {
+            // Hide all tab content
+            let tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.add('hidden'));
+
+            // Deactivate all tab buttons
+            let tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            // Show the selected tab content
+            document.getElementById(tabID).classList.remove('hidden');
+
+            // Activate the selected tab button
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
 </body>
 </html>

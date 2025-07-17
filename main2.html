@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - IRIS</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f9fa;}
+    header {background:#0b1e3c; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center;}
+    header h1 {font-size:16px; margin:0;}
+    nav a {color:#fff; margin-left:15px; text-decoration:none; font-size:14px;}
+    .breadcrumb {background:#fff; padding:10px 20px; font-size:14px; color:#555;}
+    .breadcrumb span {color:#999;}
+    main {display:flex; padding:20px;}
+    .sidebar {width:220px; background:#fff; padding:15px; margin-right:20px; border-radius:4px;}
+    .sidebar h3 {font-size:14px; margin-top:0;}
+    .sidebar a {display:block; color:#007bff; text-decoration:none; font-size:14px; margin:5px 0;}
+    .profile-card {width:250px; background:#fff; text-align:center; padding:15px; border-radius:4px;}
+    .profile-card img {width:180px; height:auto; border-radius:4px;}
+    .profile-card h4 {margin:10px 0 5px 0; font-size:16px;}
+    .profile-card p {font-size:14px; color:#666;}
+    .details {flex:1; background:#fff; padding:15px; border-radius:4px; margin-left:20px;}
+    .details h3 {margin-top:0; font-size:16px; border-bottom:1px solid #ddd; padding-bottom:5px;}
+    .details table {width:100%; border-collapse:collapse; margin-top:10px;}
+    .details th, .details td {text-align:left; padding:8px; font-size:14px; border-bottom:1px solid #eee;}
+    footer {text-align:center; padding:10px; font-size:12px; color:#666;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NITK Surathkal | IRIS</h1>
+    <nav>
+      <a href="#">About IRIS</a>
+      <a href="#">Terms of Service</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    Home / Student / <span>KONE VENKATESH</span>
+  </div>
+
+  <main>
+    <div class="sidebar">
+      <h3>STUDENT PROFILE MENU</h3>
+      <a href="#">View Profile</a>
+      <a href="#">Edit Profile</a>
+      <a href="#">Microsoft EDU Account</a>
+      <a href="#">Change Password</a>
+      <h3>SUPPORT</h3>
+      <p>officers@iris.nitk.ac.in</p>
+    </div>
+
+    <div class="profile-card">
+      <img src="student_photo.jpg" alt="Profile Photo">
+      <h4>KONE VENKATESH</h4>
+      <p>🎓 PhD Student @ NITK, Surathkal
+      </p>
+      <button>Edit Profile</button>
+    </div>
+
+    <div class="details">
+      <h3>Personal Details</h3>
+      <table>
+        <tr><th>Father's Name</th><td>KONE YEDUKONDALA VENKATESWARA RAO</td><th>Gender</th><td>Male</td></tr>
+        <tr><th>Date of Birth</th><td>09-07-1992</td><th>Blood Group</th><td>O+</td></tr>
+        <tr><th>Email</th><td>konevenkatesh92@gmail.com</td><th>Mother Tongue</th><td>Telugu</td></tr>
+        <tr><th>Nationality</th><td>India</td><th>Aadhaar Number</th><td>426875026729</td></tr>
+        <tr><th>Phone</th><td>7893646449</td><th>Parents Phone</th><td>7032674747</td></tr>
+        <tr><th>Name in Hindi</th><td colspan="3">Update this detail</td></tr>
+        <tr><th>Permanent Address</th><td>3-245/2 VENKATREDDY NAGAR, AIE BOLLARAM, Telangana</td><th>Pincode</th><td>502325</td></tr>
+      </table>
+      <h3>Academic Details</h3>
+      <table>
+        <tr><th>Roll Number</th><td>207CV005</td><th>Registration Number</th><td>207101</td></tr>
+        <tr><th>Branch</th><td>PhD : Civil Engineering</td><th>Degree</th><td>PhD</td></tr>
+        <tr><th>Category</th><td>General</td><th>Date of Admission</th><td>28-09-2020</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    IRIS @ NITK Surathkal 2025
+  </footer>
+</body>
+</html>
